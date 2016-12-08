@@ -1,0 +1,78 @@
+doctype html
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=edge')
+    meta(name='viewport', content='width=device-width, initial-scale=1')
+    meta(name='description', content='E-learning content editor')
+    meta(name='author', content='Ghenadie Cabac')
+    link(rel='icon', href='favicon.ico')
+    title= sails.config.appName + " | " + title
+    // LESS
+    // STYLES
+    link(rel="stylesheet", href="/styles/font-awesome.min.css")
+    link(rel="stylesheet", href="/styles/importer.css")
+    link(rel="stylesheet", href="/styles/style.css")
+    // STYLES END
+    // Script
+    
+    script(src='js/jquery.js')
+    script(src='js/bootstrap.min.js')
+    script(src='js/script.js')
+    //if lt IE 9
+      script(src='https://cdn.jsdelivr.net/html5shiv/3.7.2/html5shiv.min.js')
+      script(src='https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js')
+  body
+    .container
+      header.hidden-xs.hidden-sm
+        #logo
+          h1
+            a(href='/')
+              | SLO
+              sup +
+              |  SYSTEM
+          p Platforma de invatare
+        .fl_right
+          ul
+            li
+              a(href='#') Home
+            li
+              a(href='#') Contact Us
+            li
+              a(href='#') A - Z Index
+            li
+              a(href='#') Student Login
+            li.last
+              a(href='#') Staff Login
+          form#sitesearch(action='#', method='post')
+            fieldset
+              strong Search:
+              input(type='text', value='Search Our Website…')
+              i.fa.fa-search(aria-hidden='true')
+      .clearfix
+      nav.navbar.navbar-default
+        .container-fluid
+          // Brand and toggle get grouped for better mobile display
+          .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#bs-example-navbar-collapse-1', aria-expanded='false')
+              span.sr-only Toggle navigation
+              span.icon-bar
+              span.icon-bar
+              span.icon-bar
+            a.navbar-brand.visible-xs.visible-sm(href='#') SLO + SYSTEM
+          // Collect the nav links, forms, and other content for toggling
+          #bs-example-navbar-collapse-1.collapse.navbar-collapse
+            ul.nav.navbar-nav
+              li.active
+                a(href='#')
+                  | Link 
+                  span.sr-only (current)
+              li
+                a(href='#') Link
+          // /.navbar-collapse
+        // /.container-fluid
+      
+      block content
+      include ./footer.jade
+      .cop
+        | Copyright © 2016 - All Rights Reserved - Laboratorul ECeL USARB

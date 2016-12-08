@@ -1,0 +1,62 @@
+body {
+    font-family: Georgia, "Times New Roman", Times, serif;
+    color: #979797;
+    background-color: #06213F;
+}
+/* header*/
+header a{
+  text-decoration: none;
+  color: white;
+}
+header a:hover{
+  text-decoration: none;
+  color: white;
+}
+.fl_right{
+  float: right;
+}
+#logo{
+  float:left;
+}
+.fl_right ul li{
+  display: inline;
+}
+.fl_right li:before {
+content: " | ";
+}
+
+.fl_right li:first-child:before {
+content: none;
+}
+.navbar {
+  text-transform: uppercase;
+}
+/* carusel */
+#myCarousel .nav a small {
+    display:block;
+}
+#myCarousel .nav {
+    background:#eee;
+}
+#myCarousel .nav a {
+    border-radius:0px;
+}
+.brred  {
+  border: 4px solid white;
+  border-radius:20px;
+  overflow:  hidden;
+}
+.dvbk{
+  background-color: white;
+  margin-top: 25px;
+  color: black;
+  padding: 10px
+}
+.tit{
+  text-transform: uppercase;
+  border-bottom: 1px solid #ccc;
+}
+.cop{
+  text-align: center;
+  padding-top: 20px;
+}
