@@ -37,6 +37,12 @@ module.exports.routes = {
     locals: {
       pagename: 'Principala'
     }
+  },
+  '/test': {
+    view: 'test',
+    locals: {
+      pagename: 'Test'
+    }
   }
 
   /***************************************************************************
