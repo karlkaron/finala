@@ -5,8 +5,38 @@ block content
   .brred.dvbk
     .col-md-12
       .tit
-        | link-uri utile
-      
+        | adaugare noutăţi
+      .contact_form
+            
+       .con_form
+         form
+           .form-group
+             label Titlu noutăţii
+             |     
+             input.form-control(placeholder='Titlu noutăţii', name='title')
+           |   
+           .form-group
+             label Textul scurt
+             |     
+             textarea.form-control(placeholder='Textul scurt al noutatii',name='description')
+             |   
+           .form-group
+             label Textul  al noutatii
+             |     
+             textarea.form-control(placeholder='Textul  al noutatii',name='content')
+             |   
+           .form-group
+             label Imaginea
+             |     
+             input(type='file',name='image')
+             |     
+            
+           |   
+           
+           |   
+           button.btn.btn-default(type='submit') Adauga noutatea
+
+
     
   .clearfix
   

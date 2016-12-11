@@ -40,6 +40,12 @@ module.exports.routes = {
       pagename: 'Test'
     }
   },
+  '/news': {
+    view: 'news/news',
+    locals: {
+      pagename: 'Noutati'
+    }
+  },
 
 
   /***************************************************************************
