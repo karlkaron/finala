@@ -9,7 +9,7 @@ block content
       .contact_form
             
        .con_form
-         form
+         form(action='/news/create' method='post')
            .form-group
              label Titlu noutăţii
              |     
@@ -18,12 +18,12 @@ block content
            .form-group
              label Textul scurt
              |     
-             textarea.form-control(placeholder='Textul scurt al noutatii',name='description')
+             textarea.form-control(placeholder='Textul scurt al noutatii', name='description')
              |   
            .form-group
              label Textul  al noutatii
              |     
-             textarea.form-control(placeholder='Textul  al noutatii',name='content')
+             textarea.form-control(placeholder='Textul  al noutatii', name='content')
              |   
            .form-group
              label Imaginea
@@ -34,7 +34,7 @@ block content
            |   
            
            |   
-           button.btn.btn-default(type='submit') Adauga noutatea
+           button.btn.btn-default(type='submit' value='CREATE') Adauga
 
 
     

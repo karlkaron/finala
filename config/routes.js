@@ -43,8 +43,10 @@ module.exports.routes = {
   '/news': {
     view: 'news/news',
     locals: {
-      pagename: 'Noutati'
-    }
+      pagename: 'Noutăţii'
+    },
+     controller: 'news',
+    action: 'index'
   },
 
 
@@ -55,18 +57,24 @@ module.exports.routes = {
    * Rutele pentru administrare                                               *
    *                                                                          *
    ***************************************************************************/
-   '/admin': {
-     view: 'admin/index',
-     controler: 'news',
-     locals: {
-       pagename: 'Administrare'
-     }
-   },
-   '/admin/addnews': {
-     view: 'admin/addnews',
-     controler: 'news',
-     locals: {
-       pagename: 'Adaugarea Noutatii'
-     }
-   }
+  '/admin': {
+    view: 'admin/index',
+
+    locals: {
+      pagename: 'Administrare'
+    }
+  },
+  '/admin/addnews': {
+    view: 'admin/addnews',
+
+    locals: {
+      pagename: 'Adaugarea Noutatii'
+    }
+
+  },
+
+  'post /news/create': {
+    controller: 'news',
+    action: 'create'
+  }
 };
