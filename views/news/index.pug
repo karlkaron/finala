@@ -1,0 +1,18 @@
+extends ../layout.pug
+block content
+
+  .brred.dvbk
+    .col-md-3
+      .tit
+        | link-uri utile
+    .col-md-5
+      .tit
+      | Ultimile noutăţi
+    each news in News
+      p=news.content
+
+
+
+
+
+  .clearfix

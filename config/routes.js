@@ -38,14 +38,16 @@ module.exports.routes = {
     view: 'test',
     locals: {
       pagename: 'Test'
-    }
+    },
+    controller: 'news',
+    action: 'index'
   },
   '/news': {
-    view: 'news/news',
+    view: 'news/index',
     locals: {
       pagename: 'Noutăţii'
     },
-     controller: 'news',
+    controller: 'news',
     action: 'index'
   },
 
@@ -76,5 +78,9 @@ module.exports.routes = {
   'post /news/create': {
     controller: 'news',
     action: 'create'
+  },
+  'get /news/:page': {
+    controller: 'news', // Контроллер
+    action: 'page' // Действие
   }
 };

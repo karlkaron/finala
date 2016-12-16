@@ -61,9 +61,11 @@ module.exports = {
       if (err) return res.send(500);
       res.view({
         news: news
-      });
+
+      })
 
     });
+
   },
 
   /**
@@ -109,10 +111,10 @@ module.exports = {
         page: page,
         limit: 5
       })
-      .exec(function(err, news) {
+      .exec(function(err, newss) {
         if (err) return res.send(500);
         res.view({
-          news: news
+          newss: newss
         });
 
       });
